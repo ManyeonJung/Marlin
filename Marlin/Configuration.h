@@ -760,13 +760,9 @@
 
 // @section homing
 
-<<<<<<< HEAD
 #define Z_HOMING_HEIGHT 2  // (in mm) Minimal z height before homing (G28) for Z clearance above the bed, clamps, ...
-=======
 //#define NO_MOTION_BEFORE_HOMING  // Inhibit movement until all axes have been homed
-
 //#define Z_HOMING_HEIGHT 4  // (in mm) Minimal z height before homing (G28) for Z clearance above the bed, clamps, ...
->>>>>>> 8dc10fb4c206e4bbcbe9ea21a25d5a9802aa54a8
                              // Be sure you have this distance over your Z_MAX_POS in case.
 
 // Direction of endstops when homing; 1=MAX, -1=MIN
