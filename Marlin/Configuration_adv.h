@@ -76,7 +76,7 @@
  */
 #if ENABLED(THERMAL_PROTECTION_HOTENDS)
   #define THERMAL_PROTECTION_PERIOD 60        // Seconds
-  #define THERMAL_PROTECTION_HYSTERESIS 4     // Degrees Celsius
+  #define THERMAL_PROTECTION_HYSTERESIS 10     // Degrees Celsius
 
   /**
    * Whenever an M104, M109, or M303 increases the target temperature, the
@@ -1070,7 +1070,7 @@
   #define HOLD_MULTIPLIER    0.5  // Scales down the holding current from run current
   #define INTERPOLATE       true  // Interpolate X/Y/Z_MICROSTEPS to 256
 
-  #define X_CURRENT          600  // rms current in mA. Multiply by 1.41 for peak current.
+  #define X_CURRENT          870  // rms current in mA. Multiply by 1.41 for peak current.
   #define X_MICROSTEPS        32  // 0..256
 
   #define Y_CURRENT          870
@@ -1173,9 +1173,9 @@
 #define SENSORLESS_HOMING // TMC2130 only
 
   #if ENABLED(SENSORLESS_HOMING)
-    #define X_HOMING_SENSITIVITY  9
-    #define Y_HOMING_SENSITIVITY  12
-    #define Z_HOMING_SENSITIVITY  8
+    #define X_HOMING_SENSITIVITY  28
+    #define Y_HOMING_SENSITIVITY  30
+    #define Z_HOMING_SENSITIVITY  zz
   #endif
 
   /**
